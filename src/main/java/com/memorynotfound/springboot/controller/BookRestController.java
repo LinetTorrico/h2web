@@ -1,18 +1,17 @@
-package com.memorynotfound.springboot;
+package com.memorynotfound.springboot.controller;
 
+import com.memorynotfound.springboot.model.Book;
+import com.memorynotfound.springboot.repository.BookRepository;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
-//@RequestMapping("/product")
-//@Api(value="onlinestore", description="Operations pertaining to products in Online Store")
+@RequestMapping("/product")
+@Api(value="onlinestore", description="Operations pertaining to products in Online Store")
 public class BookRestController {
     @Autowired
     BookRepository repository;

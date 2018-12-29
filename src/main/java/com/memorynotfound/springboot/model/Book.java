@@ -1,4 +1,4 @@
-package com.memorynotfound.springboot;
+package com.memorynotfound.springboot.model;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 
