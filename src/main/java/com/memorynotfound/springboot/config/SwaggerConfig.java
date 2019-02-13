@@ -10,9 +10,7 @@ import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
-/**
- * @author Miguel Rojas
- */
+
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -30,7 +28,7 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Group A SSI API")
+                .title("Task API")
                 .description("Rest API for industrial security system")
                 .contact(ApiInfo.DEFAULT_CONTACT)
                 .version("1.0")
